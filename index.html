@@ -6,13 +6,80 @@
     <title>Emergency Hotline</title>
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Tailwind CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font CDN -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <!-- font css -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- fontawsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    
+    <header class="border-2 border-red-500 min-h-[100px] container mx-auto flex justify-between items-center ">
+        <div class="nav-left border-2 border-yellow-500 flex items-center justify-center">
+                <img src="./assets/logo.png" alt="" class="max-w-[50px] max-h-[50px]">
+                <p class="text-[#006747] font-extrabold text-xl">Emergency <br> Service</p>
+            </div>
+
+            <div class="nav-right border-2 border-blue-500 gap-5 flex">
+                <div class="heart-count bg-[#41ff6b1a] w-[123px] rounded-[50px] flex justify-center items-center gap-3">
+                    <p class="font-black">0</p>
+                    <img src="./assets/heart.png" alt="" class="max-w-[30px] max-h-[30px]">
+                </div>
+                <div class="coin-count bg-[#41ff6b1a] w-[123px] rounded-[50px] flex justify-center items-center gap-3">
+                    <p class="font-black">100</p>
+                    <img src="./assets/coin.png" alt="" class="max-w-[24px] max-h-[24px]">
+                </div>
+                <div class="copy-count flex items-center justify-center gap-2 bg-[#00a63e] w-[127px] h-[52px] rounded-[40px] text-white font-semibold">
+                    <p>2</p>
+                    <p>Copy</p>
+                </div>
+            </div>
+    </header>
+
+    <main class="bg-[#41ff6b1a]">
+        <!-- banner section -->
+        <section class="">
+            <div class="banner-container border-2 border-red-500 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] min-h-[240px] mx-auto justify-center items-center flex flex-col items-center justify-center">
+                <img src="./assets/logo-dark.png" alt="" class="max-w-[92px] max-h-[92px] ">
+                <h2 class="text-white font-bold text-4xl">Emergency Service Directory</h2>
+                <p class="text-white font-semibold text-xl mt-3">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+            </div>
+        </section>
+
+        <!-- Emergency hotline section -->
+        <section id="number-history-container" class="w-11/12 container mx-auto py-10 grid grid-cols-12 gap-8 ">
+            <!-- emergency cards -->
+            <section id="emergency-number-card-container" class="bg-yellow-100 col-span-9">
+                <!-- Emergency number card-1 -->
+                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] border-2 border-purple-500 ">
+
+                    <div id="icon-image-div" class="border-2 flex justify-between items-center">
+                        <img src="./assets/emergency.png" alt="" class="">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div id="service-title-container">
+                        <p class="text-2xl font-bold">National Emergency Number</p>
+                        <p class="text-gray-500">National Emergency</p>
+                        <h2 class="text-3xl font-bold">999</h2>
+                        <span class="bg-[#F2F2F2] ">All</span>
+                    </div>
+                    <div id="card-btn-container" class="border-2 flex justify-between">
+                        <button class="btn btn-outline"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="btn btn-active btn-success"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                 </div>
+            </section>
+
+
+            <!-- call history -->
+            <aside id="call-history" class="bg-green-100 col-span-3">
+                <h1>Call history</h1>
+            </aside>
+        </section>
+    </main>
 </body>
 </html>
