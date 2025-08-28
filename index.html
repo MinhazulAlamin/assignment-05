@@ -18,10 +18,10 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class=" min-h-[100px] container mx-auto flex justify-between items-center ">
+    <header class=" min-h-[100px] container mx-auto flex flex-col md:flex-row justify-between items-center gap-4 px-4">
         <div class="nav-left  flex items-center justify-center">
                 <img src="./assets/logo.png" alt="" class="max-w-[50px] max-h-[50px]">
-                <p class="text-[#006747] font-extrabold text-xl">Emergency <br> Service</p>
+                <p class="text-[#006747] font-extrabold text-lg md:text-xl">Emergency <br> Service</p>
             </div>
 
             <div class="nav-right  gap-5 flex">
@@ -43,19 +43,19 @@
     <main class="bg-[#41ff6b1a]">
         <!-- banner section -->
         <section class="">
-            <div class="banner-container  bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] min-h-[240px] mx-auto justify-center items-center flex flex-col items-center justify-center">
+            <div class="banner-container  bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] min-h-[240px] mx-auto flex flex-col items-center justify-center rounded-xl md:rounded-none mt-2 md:rounded-none">
                 <img src="./assets/logo-dark.png" alt="" class="max-w-[92px] max-h-[92px] ">
-                <h2 class="text-white font-bold text-4xl">Emergency Service Directory</h2>
-                <p class="text-white font-semibold text-xl mt-3">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+                <h2 class="text-white font-bold text-2xl md:text-4xl text-center px-4">Emergency Service Directory</h2>
+                <p class="text-white font-medium md:font-semibold md:text-xl mt-3 text-center">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
             </div>
         </section>
 
         <!-- Emergency hotline section -->
-        <section id="number-history-container" class="w-11/12 container mx-auto py-10 grid grid-cols-12 gap-8 ">
+        <section id="number-history-container" class="w-11/12 container mx-auto py-10 grid grid-cols-1 md:grid-cols-12 gap-8 ">
             <!-- emergency cards -->
-            <section id="emergency-number-card-container" class=" col-span-9 grid grid-cols-3 gap-8">
+            <section id="emergency-number-card-container" class="col-span-12 md:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <!-- Emergency number card-1 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -73,7 +73,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-2 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/police.png" alt="" class="bg-[#DFEFFF] max-w-[60px] p-3  rounded-xl">
@@ -91,7 +91,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-3 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/fire-service.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -109,7 +109,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-4 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/ambulance.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -127,7 +127,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-5 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -145,7 +145,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-6 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -163,7 +163,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-7 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -181,7 +181,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-8 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/brac.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -199,7 +199,7 @@
                     </div>
                  </div>
                 <!-- Emergency number card-9 -->
-                 <div id="hotline-card-parent" class="max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/Bangladesh-Railway.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -220,7 +220,7 @@
 
 
             <!-- call history -->
-            <aside id="call-history" class="bg-white col-span-3 rounded-xl shadow-md">
+            <aside id="call-history" class="bg-white col-span-12 md:col-span-3 rounded-xl shadow-md min-h-[300px]">
                 <div id="call-history-top" class="flex justify-between items-center m-6 ">
                     <h1 class="text-xl font-semibold"><i class="fa-regular fa-clock"></i> Call History</h1>
                     <button class="btn bg-[#00A63E] text-white font-semibold rounded-full py-3 px-9">Clear</button>
@@ -230,8 +230,8 @@
                         <p>Fire Service Number</p>
                         <p>999</p>
                     </div>
-                    <div>time ..</div> -->
-
+                    <div>time . .</div> -->
+                    
                 </div>
             </aside>
         </section>
