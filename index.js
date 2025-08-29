@@ -4,18 +4,16 @@ function getElement(id) {
     return element;
 }
 
-
-
 //  heart count functionality
 const cardHeartIcons = document.getElementsByClassName('card-heart-icon')
-console.log(cardHeartIcons);
+// console.log(cardHeartIcons);
 
 for(let cardHeartIcon of cardHeartIcons) {
     cardHeartIcon.addEventListener("click", function(){
-        console.log("button clicked");
+        // console.log("button clicked");
 
         const heartIconClickCount = getElement("heart-icon-count").innerText
-        console.log(heartIconClickCount);
+        // console.log(heartIconClickCount);
 
         const currentHeartIconClickCount = Number(heartIconClickCount) + 1;
         getElement("heart-icon-count").innerText = currentHeartIconClickCount
@@ -25,18 +23,15 @@ for(let cardHeartIcon of cardHeartIcons) {
 // call button functionality
 let coins = 100;
 const coinDisplay = getElement("coin-count-display")
-
 const callHistoryList = document.getElementById("call-history-logs")
-
 const clearHistoryButton = document.getElementById("clear-history-btn")
-
 const callButtons = document.getElementsByClassName("call-btn")
-console.log(callButtons)
+// console.log(callButtons)
 
 for(let i = 0; i < callButtons.length; i++){
     callButtons[i].addEventListener("click", function(){
         const serviceName = callButtons[i].parentNode.parentNode.childNodes[3].childNodes[1].textContent;
-        console.log(serviceName);
+        // console.log(serviceName);
         const serviceNumber = callButtons[i].parentNode.parentNode.childNodes[3].childNodes[5].textContent;
         // console.log(serviceNumber);
 
@@ -49,8 +44,7 @@ for(let i = 0; i < callButtons.length; i++){
         coins -= 20;
         coinDisplay.textContent = coins;
 
-
-        //
+        // call history functionality
         const timeNow = new Date().toLocaleTimeString();
 
         const historyItem = document.createElement("div");
@@ -77,22 +71,21 @@ clearHistoryButton.addEventListener("click", function(){
 // copy button functionality
 let copyCount = 2;
 
-
 const copyButtons = document.getElementsByClassName("copy-btn")
-console.log(copyButtons);
+// console.log(copyButtons);
 
 for(let copyButton of copyButtons) {
     copyButton.addEventListener("click", function() {
-        console.log(" Copy button clicked");
+        // console.log(" Copy button clicked");
 
         const copyIconClickCount = getElement("copy-icon-count").innerText
-        console.log(copyIconClickCount);
+        // console.log(copyIconClickCount);
 
         const currentCopyIconClickCount = Number(copyIconClickCount) + 1;
         getElement("copy-icon-count").innerText = currentCopyIconClickCount
 
         const numberToCopy = copyButton.parentNode.parentNode.childNodes[3].childNodes[5].textContent;
-        console.log(numberToCopy);
+        // console.log(numberToCopy);
 
         navigator.clipboard.writeText(numberToCopy).then(() => {
             alert(" Copied Number " + numberToCopy)
