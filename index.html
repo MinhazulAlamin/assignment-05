@@ -30,11 +30,11 @@
                     <img src="./assets/heart.png" alt="" class="max-w-[30px] max-h-[30px]">
                 </div>
                 <div class="coin-count bg-[#41ff6b1a] w-[123px] rounded-[50px] flex justify-center items-center gap-3">
-                    <p class="font-black">100</p>
+                    <p id="coin-count-display" class="font-black">100</p>
                     <img src="./assets/coin.png" alt="" class="max-w-[24px] max-h-[24px]">
                 </div>
-                <div class="copy-count flex items-center justify-center gap-2 bg-[#00a63e] w-[127px] h-[52px] rounded-[40px] text-white font-semibold">
-                    <p>2</p>
+                <div class="copy-count-div flex items-center justify-center gap-2 bg-[#00a63e] w-[127px] h-[52px] rounded-[40px] text-white font-semibold">
+                    <p id="copy-icon-count" class="copy-count">0</p>
                     <p>Copy</p>
                 </div>
             </div>
@@ -55,7 +55,7 @@
             <!-- emergency cards -->
             <section id="emergency-number-card-container" class="col-span-12 md:col-span-9 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <!-- Emergency number card-1 -->
-                 <div id="hotline-card-parent" class="w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
+                 <div id="hotline-card-parent" class="service-card w-full md:max-w-[437px] max-h-[360px] bg-white rounded-xl p-8 shadow-md">
 
                     <div id="icon-image-div" class="flex justify-between items-center">
                         <img src="./assets/emergency.png" alt="" class="bg-[#FFE3E2] max-w-[60px] p-3  rounded-xl">
@@ -63,13 +63,13 @@
                     </div>
                     <div id="service-title-container" class="my-4">
                         <p class="text-xl font-bold">National Emergency Number</p>
-                        <p class="text-gray-500">National Emergency</p>
-                        <h2 class="text-2xl font-bold my-4">999</h2>
+                        <p id="service-name" class="service-name text-gray-500">National Emergency</p>
+                        <h2 id="service-number" class="service-num text-2xl font-bold my-4">999</h2>
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">All</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-2 -->
@@ -86,8 +86,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Police</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-3 -->
@@ -104,8 +104,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Fire</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-4 -->
@@ -122,8 +122,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Health</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-5 -->
@@ -140,8 +140,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Help</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-6 -->
@@ -158,8 +158,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Govt.</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-7 -->
@@ -176,8 +176,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Electricity</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-8 -->
@@ -194,8 +194,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">NGO</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
                 <!-- Emergency number card-9 -->
@@ -212,8 +212,8 @@
                         <span class="bg-[#F2F2F2] p-3 rounded-2xl ">Travel</span>
                     </div>
                     <div id="card-btn-container" class=" grid grid-cols-2 gap-2 my-6">
-                        <button class="btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
-                        <button class="btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
+                        <button class="copy-btn btn btn-outline text-gray-500 rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-btn btn bg-[#00A63E] text-white rounded-lg"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                  </div>
             </section>
@@ -223,15 +223,16 @@
             <aside id="call-history" class="bg-white col-span-12 md:col-span-3 rounded-xl shadow-md min-h-[300px]">
                 <div id="call-history-top" class="flex justify-between items-center m-6 ">
                     <h1 class="text-xl font-semibold"><i class="fa-regular fa-clock"></i> Call History</h1>
-                    <button class="btn bg-[#00A63E] text-white font-semibold rounded-full py-3 px-9">Clear</button>
+                    <button id="clear-history-btn" class="btn bg-[#00A63E] text-white font-semibold rounded-full py-3 px-9">Clear</button>
                 </div>
-                <div id="call-history-list" class="">
-                    <!-- <div>
-                        <p>Fire Service Number</p>
-                        <p>999</p>
+                <div id="call-history-logs" class="call-history-log">
+                    <!-- <div id="call-historys" class="call-history-item bg-[#F2F2F2] flex justify-between items-center p-4 m-6 rounded-lg mb-2">
+                    <div>
+                        <p class="text-lg font-semibold">Fire Service Number</p>
+                        <p class="text-gray-500 text-lg">999</p>
                     </div>
-                    <div>time . .</div> -->
-
+                    <div class="text-lg">11:36:58 AM</div>
+                 </div> -->
                 </div>
             </aside>
         </section>
